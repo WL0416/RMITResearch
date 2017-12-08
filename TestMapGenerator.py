@@ -3,7 +3,7 @@ from PIL import Image
 from random import *
 from scipy.io import savemat
 
-OUTPUT_FOLDER = ".\\Maps4Test\\"
+OUTPUT_FOLDER = "./Maps4Test/"
 IMAGE_ROW = 2
 IMAGE_COLUMN = 2
 IMAGE_CHANNEL = 3
@@ -44,7 +44,7 @@ def image_generator():
 
         image.save(OUTPUT_FOLDER + str(len(image_group)) + '.jpg')
 
-        savemat(OUTPUT_FOLDER + str(len(image_group)) + '.mat', {"Test Image": tiny_image})
+        # savemat(OUTPUT_FOLDER + str(len(image_group)) + '.mat', {"Test Image": tiny_image})
 
 
 def ground_truth():
